@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxmysqltemplate.ProjectController">
+    <TextField fx:id="RiotIdTextField" layoutX="169.0" layoutY="116.0" onAction="#accountInfo" prefHeight="25.0" prefWidth="263.0" />
+    <ComboBox fx:id="userComboBox" layoutX="245.0" layoutY="236.0" promptText="Select a User" />
+    <Text layoutX="28.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a user to add the Riot Account to then input the riot account in the format of Username#Tagline" wrappingWidth="544.7999877929688" />
+    <ButtonBar layoutX="30.0" layoutY="26.0" prefHeight="40.0" prefWidth="541.0">
+      <buttons>
+          <Button onAction="#goToDiscordIdInsert" text="Add User" />
+          <Button onAction="#gotToRolePage" text="Update Roles" />
+          <Button onAction="#goToCreateTeams" text="Find Match" />
+          <Button onAction="#goToHomePage" text="Back To Home Page" />
+      </buttons>
+    </ButtonBar>
+   <TextArea fx:id="output" layoutX="201.0" layoutY="286.0" prefHeight="100.0" prefWidth="200.0" />
+   <Text layoutX="17.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Riot Account" />
+</Pane>

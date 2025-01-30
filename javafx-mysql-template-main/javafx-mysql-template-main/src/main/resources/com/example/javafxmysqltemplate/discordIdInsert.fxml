@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxmysqltemplate.ProjectController">
+    <TextField fx:id="discordIdTextField" layoutX="107.0" layoutY="243.0" onAction="#addPlayerInfo" prefHeight="25.0" prefWidth="387.0" />
+    <ToolBar layoutX="33.0" layoutY="42.0" prefHeight="35.0" prefWidth="534.0">
+        <Button onAction="#goToHomePage" text="Back To Home Page" />
+      <Button mnemonicParsing="false" onAction="#goToDeleteUser" text="Delete User" />
+        <Button onAction="#goToRiotAccountInfo" text="Insert Riot Account Info" />
+        <Button onAction="#gotToRolePage" text="Update Roles" />
+        <Button onAction="#goToCreateTeams" text="Find Match" />
+    </ToolBar>
+    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add User" />
+   <TextArea fx:id="output" layoutX="201.0" layoutY="100.0" prefHeight="100.0" prefWidth="200.0" text="Add someones username that &#10;doesn't already exist" />
+</Pane>
